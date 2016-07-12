@@ -9,6 +9,8 @@ gem 'sass-rails', '>= 3.2'
 gem 'rails_12factor'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'autoprefixer-rails'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
 # gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -16,7 +18,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script-source', '1.8.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise', '~> 4.2'
 gem 'simple_form'
