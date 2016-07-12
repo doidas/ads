@@ -12,7 +12,5 @@ test:
   database: db/test.sqlite3
 
 development:
-  adapter: postgresql
-  host: localhost
-  username: rlqjacdmystvxs
-  database: d1c2vev2t6mmb2
+  <<: *default
+  database: db/test.sqlite3
