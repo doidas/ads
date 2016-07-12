@@ -6,6 +6,7 @@ gem 'rails', '~> 5.0.0'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 3.2'
+gem 'rails_12factor'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'autoprefixer-rails'
 # gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
