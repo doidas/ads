@@ -33,13 +33,15 @@
             %li
               %a{:href => "#"} One more separated link
       %ul.nav.navbar-nav.navbar-right
-        %li.active
-          %a{:href => "./"}
-            Default
-            %span.sr-only (current)
-        %li
-          %a{:href => "../navbar-static-top/"} Static top
-        %li
-          %a{:href => "../navbar-fixed-top/"} Fixed top
+        - if user_signed_in?
+          %li
+            = link_to "Sign Out", destroy_user_session_path, :method => :delete
+          %li
+            = link_to "Edit profile", edit_user_registration_path
+        - else
+          %li
+            = link_to "Sign in", new_user_session_path 
+       
+          
     / /.nav-collapse
   / /.container-fluid
